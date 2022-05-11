@@ -8,4 +8,4 @@ wget -q https://dlcdn.apache.org/spark/spark-3.0.3/spark-3.0.3-bin-hadoop2.7.tgz
 tar xf spark-3.0.3-bin-hadoop2.7.tgz && \ 
 apk del .pynacl_deps
 
-ENTRYPOINT ["jupyter notebook"]
+CMD ["python","-m","notebook","--allow-root", "--port=8888", "--no-browser", "--ip=0.0.0.0","--NotebookApp.token=''","--NotebookApp.password=''"]
