@@ -1,0 +1,4 @@
+notebook==6.2.0
+pyspark==3.2.1
+findspark==2.0.1
+
